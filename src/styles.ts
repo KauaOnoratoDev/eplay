@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const Cores = {
   branco: '#eee',
@@ -13,10 +13,18 @@ export const GlobalCss = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    list-style: none;
   }
 
   body {
     background-color: ${Cores.preto};
     color: ${Cores.branco};
+    padding-top: 40px;
   }
+`
+
+export const Container = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 `
